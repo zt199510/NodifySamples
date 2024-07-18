@@ -17,19 +17,19 @@ namespace NodifySamples2.ViewModels
       
             Nodes.Add(new NodeViewModel
             {
-                Title = "Welcome",
+                Title = "我的第一个节点",
                 Input = new ObservableCollection<ConnectorViewModel>
             {
                 new ConnectorViewModel
                 {
-                    Title = "In"
+                    Title = "输入"
                 }
             },
                 Output = new ObservableCollection<ConnectorViewModel>
             {
                 new ConnectorViewModel
                 {
-                    Title = "Out"
+                    Title = "输出"
                 }
             }
             });
