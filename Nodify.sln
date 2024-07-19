@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NodifySamples", "NodifySamp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NodifySamples2", "NodifySamples2\NodifySamples2.csproj", "{9FF6F523-A380-4867-B560-F3245B25EDB9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NodifySamples3", "NodifySamples3\NodifySamples3.csproj", "{3AD92106-7667-4C78-94EE-7E3350D796FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9FF6F523-A380-4867-B560-F3245B25EDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FF6F523-A380-4867-B560-F3245B25EDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FF6F523-A380-4867-B560-F3245B25EDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD92106-7667-4C78-94EE-7E3350D796FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD92106-7667-4C78-94EE-7E3350D796FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD92106-7667-4C78-94EE-7E3350D796FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD92106-7667-4C78-94EE-7E3350D796FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
