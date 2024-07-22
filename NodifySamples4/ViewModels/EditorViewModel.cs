@@ -1,4 +1,4 @@
-﻿using NodifySamples3.Models;
+﻿using NodifySamples4.Models;
 
 using System;
 using System.Collections.Generic;
@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NodifySamples3.ViewModels
+namespace NodifySamples4.ViewModels
 {
     public class EditorViewModel
     {
         public ObservableCollection<NodeViewModel> Nodes { get; } = new ObservableCollection<NodeViewModel>();
         public ObservableCollection<ConnectionViewModel> Connections { get; } = new ObservableCollection<ConnectionViewModel>();
+
+
+        public PendingConnectionViewModel PendingConnection { get; }
         public EditorViewModel()
         {
+
+
+            PendingConnection  = new PendingConnectionViewModel(this);
             var welcome = new NodeViewModel
             {
                 Title = "我的第一个节点",
@@ -37,12 +43,12 @@ namespace NodifySamples3.ViewModels
 
             var nodify = new NodeViewModel
             {
-                Title = "To Nodify",
+                Title = "节点1",
                 Input = new ObservableCollection<ConnectorViewModel>
             {
                 new ConnectorViewModel
                 {
-                    Title = "In"
+                    Title = "输入"
                 }
             }
             };
@@ -50,8 +56,20 @@ namespace NodifySamples3.ViewModels
             Nodes.Add(nodify);
 
 
-            Connections.Add(new ConnectionViewModel(welcome.Output[0], nodify.Input[0]));
            
+           
+        }
+
+
+        public void Connect(ConnectorViewModel source, ConnectorViewModel target)
+        {
+            var newConnection = new ConnectionViewModel(source, target);
+
+            // 检查是否已经存在相同的连接
+            if (!Connections.Contains(newConnection))
+            {
+                Connections.Add(newConnection);
+            }
         }
     }
 }

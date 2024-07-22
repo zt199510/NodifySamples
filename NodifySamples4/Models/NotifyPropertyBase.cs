@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NodifySamples3.Models
+namespace NodifySamples4.Models
 {
     [Serializable]
     public class NotifyPropertyBase : INotifyPropertyChanged

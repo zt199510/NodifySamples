@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NodifySamples3.Models
+namespace NodifySamples4.Models
 {
     public class NodeViewModel
     {
